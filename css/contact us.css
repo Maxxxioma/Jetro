@@ -65,22 +65,31 @@ body {
     height: 100%;
 }
 .header-main__logo {
+    
     color: #e8603c;    
     text-transform: uppercase;
     font-size: 36pt;
     font-weight: bold;
     align-items: center;
 }
+.header-main__logo a{
+    text-decoration: none;
+    color: #e8603c;  
+}
 .header-main__logo span{
     color:#f0b19d;
 }
 
 .header-main__menu-link {
+    text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
     color: #b9b9b9;
     text-decoration: none;
     margin-right: 30px;
+}
+.header-main__menu-link a:hover{
+    text-decoration: none;
 }
 
 .header-main__menu-link:last-child {    
@@ -89,7 +98,9 @@ body {
 .header-main__menu-link.active {    
     color: #e8603c;
 }
-
+.header-main__menu-link span{
+    color:#f0b19d;
+}
 /* container */
 /* slider */
 .container{
@@ -225,6 +236,7 @@ body {
 }
 .line{
     width: 941px;
+    height: 20px;
     margin-left:9px;
     padding:0;
     text-transform: capitalize;
@@ -233,18 +245,20 @@ body {
     flex-wrap: nowrap;
     
     /* align-items: center; */
-    margin-bottom:15px;
+    margin-bottom:25px;
 }
 
 .line.img{
+    margin-top: 6px;
     background:url('../img/line.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    height: 20px;
 }
 .characters{
     width: 910px;
     margin-left:9px;
-    margin-bottom:23px;
+    margin-bottom:10px;
     padding:0;
     flex-wrap:nowrap;
     
@@ -336,11 +350,11 @@ body {
      }
     
     .brd{
-        background: url('../img/portfolio/2-3.PNG');
+        background: url('../img/portfolio/2-3.png');
         }
     
     .bbb{
-         background: url('../img/portfolio/2-4.PNG');
+         background: url('../img/portfolio/2-4.png');
         }
 
          /*3 line*/
@@ -354,20 +368,11 @@ body {
      }
     
     .bs{
-        background: url('../img/portfolio/3-3.PNG');
+        background: url('../img/portfolio/3-3.png');
         }
     
     .sp{
-         background: url('../img/portfolio/3-4.PNG');
-        }
-
-    .characters.item.col-md-3 a{
-        text-decoration: none;
-    }
-
-.sp:hover .effect{
-            opacity: 1;
-            
+         background: url('../img/portfolio/3-4.png');
         }
 
 /*for portfolio fail*/
@@ -376,7 +381,7 @@ body {
 .main-title{
     background:#e8603c;
     height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     width: 940px;
     margin-left: 16px;
     
@@ -404,3 +409,198 @@ body {
     background: #e8603c;
     
 }
+
+.portfolio-item{
+    width: 940px;
+    height: 400px;
+    margin-left: 16px;
+    background: url('../img/portfolio/item.png');
+    background-size:cover;
+    
+}
+.text-plag{
+    margin-top: 25px;
+    font-family: 'Helvetica Neue';
+    font-size: 12pt;
+    font-weight: none;
+    color:#414141;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.about-us{
+    padding-left: 9px;
+}
+.about-us.main_about{
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    font-weight: regular;
+    color:#414141;
+    text-decoration: none;
+    -webkit-font-smoothing: smooth;
+    
+}
+.photo_text{
+    padding-left:0px;
+    margin-left:0px;
+    width: 665px;
+   
+}
+.img-mike{
+    background: url('../img/portfolio/Mike\(new\).PNG');
+    background-size:cover;
+    width: 230px;
+    height: 225px;
+    padding-left:0px;
+    margin-left:0px;
+}
+.text-mike{
+    margin-left: 8px;
+    width: 420px;
+}
+
+/*sidebar*/
+.about_portfolio, .categories, .photogallery{
+    width:227px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title_of_cate{
+    
+
+    font-family: 'Bebas';
+    font-size: 14pt;
+    color:#e8603c;
+}
+.background-img{
+    background:url('../img/line.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ap.background-img{
+    width: 130px;
+    margin-left:17px;
+    
+}
+.c.background-img{
+    height: 27px;
+    width: 136px;
+    margin-left: 17px;
+   
+}
+
+.phg{
+    width: 111px;
+    margin-left:17px;
+    
+}
+
+.text_of_cate{
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    font-weight: regular;
+    color:#414141;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.text_of_cate p{
+    margin:0;
+    padding: 0;
+}
+
+/*end sidebar*/
+
+/*  map*/
+.map-img{
+    width: 670px;
+    height: 405px;
+    background: url('../img/contact-us.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/* after map*/
+.after_map{
+    margin-top: 34px;
+    padding-left: 0px;
+}
+.details_info{
+    padding-left: 0px;
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+}
+
+.details_info span{
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    color:#e8603c;
+}
+.details_info span.phone{
+    font-weight: bold;
+}
+
+.contact_form input{
+    display: block;
+    margin-bottom: 11px;
+    padding: 5px;
+    width: 240px;
+    height: 36;
+    font-family: 'Bebas';
+    font-size: 12pt;
+    text-transform: uppercase;
+    color: #e8603c;
+    border: 1px solid #e8603c;
+}
+.contact_form textarea{
+    /* display: block; */
+    margin-bottom: 11px;
+    padding: 5px;
+    
+    font-family: 'Bebas';
+    font-size: 12pt;
+    text-transform: uppercase;
+    color: #e8603c;
+    border: 1px solid #e8603c;
+}
+
+.contact_form button{
+    display: block;
+    margin-bottom: 11px;
+    padding: 5px;
+    width: 70px;
+    background:#e8603c ;
+    height: 36;
+    font-family: 'Bebas';
+    font-size: 12pt;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #e8603c;
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Bebas';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #e8603c;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-family: 'Bebas';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #e8603c;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-family: 'Bebas';
+    font-size: 12pt;
+    text-transform: uppercase;
+    color: #e8603c;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-family: 'Bebas';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #e8603c;
+  }
